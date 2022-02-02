@@ -90,8 +90,8 @@ The devices support some of the following channels:
 | `zone_control`              | Player               | Control the audio zone, e.g. start/stop/next/previous.                               | `audio_zone`                                        |
 | `sysdate`                   | DateTime             | Set controller date/time.                                                            | `controller`                                        |
 | `last_log`                  | String               | Last log message on the controller, represented in JSON.                             | `controller`                                        |
-| `enable_disable_beeper`     | Switch               | Enable/Disable the beeper for this/all console(s).                                   | `controller`, `console`                             |
-| `beep`                      | Switch               | Send a beep command to this/all console(s).                                          | `controller`, `console`                             |
+| `enable_disable_beeper`     | String               | Enable/Disable the beeper for this/all console(s). values ON/OFF                     | `controller`, `console`                             |
+| `beep`                      | Number               | Send a beep command to this/all console(s). values 0=off,1=indefinite,2-6=# of beeps | `controller`, `console`                             |
 | `press`                     | Switch               | Sends a button event to the controller.                                              | `button`                                            |
 | `low_setpoint`              | Number               | The current low setpoint for this humidity/temperature sensor.                       | `temp_sensor`, `humidity_sensor`                    |
 | `high_setpoint`             | Number               | The current high setpoint for this humidity/temperature sensor.                      | `temp_sensor`, `humidity_sensor`                    |
